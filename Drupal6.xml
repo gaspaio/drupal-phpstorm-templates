@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templateSet group="Drupal6">
+  <template name="hmenu" value="/*&#10; * Implementation of hook_menu().&#10; */&#10;function $MODULE$_menu() {&#10;  $items = array();&#10;  $items['$URL$'] = array(&#10;    'title' =&gt; '$TITLE$',&#10;    'page callback' =&gt; '$CALLBACK$',&#10;    'access arguments' =&gt; array('$PERMISSION$'),&#10;    'type' =&gt; MENU_NORMAL_ITEM,&#10;  );&#10;  &#10;  return $items;&#10;}&#10;" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="MODULE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="URL" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TITLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CALLBACK" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PERMISSION" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSP" value="false" />
+      <option name="SQL" value="false" />
+      <option name="PHP" value="true" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CoffeeScript" value="false" />
+    </context>
+  </template>
+  <template name="hswftools_preprocess_player" value="/**&#10; * Implementation of hook_swftools_preprocess_[player]().&#10; */&#10;function $MODULE$_swftools_preprocess_$PLAYER$(&amp;$data) {&#10;&#10;}" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="MODULE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PLAYER" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSP" value="false" />
+      <option name="SQL" value="false" />
+      <option name="PHP" value="true" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CoffeeScript" value="false" />
+    </context>
+  </template>
+  <template name="hwidget_info" value="/**&#10; * Implementation of CCK's hook_widget_info().&#10; */&#10;function $modulename$_widget_info() {&#10;  return array(&#10;    '$modulename$_widget' =&gt; array(&#10;      'label' =&gt; t('$label$'),&#10;      'field types' =&gt; array('$fieldtype$'),&#10;      'multiple values' =&gt; CONTENT_HANDLE_CORE,&#10;      'callbacks' =&gt; array('default value' =&gt; CONTENT_CALLBACK_CUSTOM),&#10;      'description' =&gt; t('$description$'),&#10;    ),&#10;  );&#10;}" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="modulename" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="label" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="fieldtype" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="description" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSP" value="false" />
+      <option name="SQL" value="false" />
+      <option name="PHP" value="true" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CoffeeScript" value="false" />
+    </context>
+  </template>
+  <template name="hwidget_widget_settings" value="/**&#10; * Implementation of CCK's hook_widget_settings().&#10; */&#10;function $modulename$_widget_settings($op, $widget) {&#10;  switch ($op) {&#10;    case 'form':&#10;      $var0$&#10;      break;&#10;    case 'validate':&#10;      $var1$&#10;      break;&#10;    case 'save':&#10;      $var2$&#10;      break;&#10;  }&#10;}" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="modulename" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="var0" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="var1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="var2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSP" value="false" />
+      <option name="SQL" value="false" />
+      <option name="PHP" value="true" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CoffeeScript" value="false" />
+    </context>
+  </template>
+  <template name="htheme" value="/**&#10; * Implementation of hook_theme().&#10; */&#10;function $modulename$_theme() {&#10;  return array(&#10;    '$modulename$_$themename$' =&gt; array(&#10;      'arguments' =&gt; array('$arg$' =&gt; NULL),&#10;    ),&#10;  );&#10;}&#10;" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="modulename" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="themename" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="arg" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSP" value="false" />
+      <option name="SQL" value="false" />
+      <option name="PHP" value="true" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CoffeeScript" value="false" />
+    </context>
+  </template>
+  <template name="hnodeapi" value="/**&#10; * Implementation of hook_nodeapi().&#10; */&#10;function $modulename$_nodeapi(&amp;$node, $op, $a3 = NULL, $a4 = NULL) {&#10;  switch ($op) {&#10;    case 'presave':&#10;      break;&#10;    case 'insert':&#10;    case 'update':&#10;      break;&#10;    case 'view':&#10;      break;&#10;  }&#10;}" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="modulename" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSP" value="false" />
+      <option name="SQL" value="false" />
+      <option name="PHP" value="true" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CoffeeScript" value="false" />
+    </context>
+  </template>
+  <template name="hform_alter" value="/*&#10; * Implementation of hook_form_alter().&#10; */&#10;function $MODULE$_form_alter(&amp;$form, &amp;$form_state, $form_id) {&#10;&#10;  $END$&#10;&#10;}&#10;" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="MODULE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSP" value="false" />
+      <option name="SQL" value="false" />
+      <option name="PHP" value="true" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CoffeeScript" value="false" />
+    </context>
+  </template>
+  <template name="hinstall" value="/**&#10; * Implementation of hook_install().&#10; */&#10;function hook_install() {&#10;  $END$&#10;}" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSP" value="false" />
+      <option name="SQL" value="false" />
+      <option name="PHP" value="true" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CoffeeScript" value="false" />
+    </context>
+  </template>
+  <template name="hschema" value="/**&#10; * Implements hook_schema().&#10; */&#10;function hook_schema() {&#10;  $schema['$TABLE$'] = array(&#10;    'description' =&gt; '$DESCRIPTION$.', &#10;    'fields' =&gt; array(&#10;      '$FIELD1$' =&gt; array(&#10;        'description' =&gt; '$DESCRIPTION1$.', &#10;        'type' =&gt; 'serial', &#10;        'unsigned' =&gt; TRUE, &#10;        'not null' =&gt; TRUE,&#10;      ), &#10;      '$FIELD2$' =&gt; array(&#10;        'description' =&gt; '$DESCRIPTON2$.', &#10;        'type' =&gt; 'varchar', &#10;        'length' =&gt; 32, &#10;        'not null' =&gt; TRUE, &#10;        'default' =&gt; '',&#10;      ), &#10;    'unique keys' =&gt; array(&#10;      '$FIELD1$' =&gt; array($FIELD1$), &#10;    ), &#10;    'primary key' =&gt; array($FIELD1$),&#10;  );&#10;  &#10;  return $schema;&#10;}" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="TABLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DESCRIPTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="FIELD1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DESCRIPTION1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="FIELD2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DESCRIPTON2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSP" value="false" />
+      <option name="SQL" value="false" />
+      <option name="PHP" value="true" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CoffeeScript" value="false" />
+    </context>
+  </template>
+  <template name="huser" value="/**&#10; * Implements hook_user().&#10; */&#10; function $hook$_user($op, &amp;$edit, &amp;$account, $category = NULL) {&#10;  $end$&#10; }" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="hook" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="end" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSP" value="false" />
+      <option name="SQL" value="false" />
+      <option name="PHP" value="true" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CoffeeScript" value="false" />
+    </context>
+  </template>
+  <template name="hblock" value="/**&#10; * Implements hook_block().&#10; */&#10;function $hook$_block($op = 'list', $delta = 0, $edit = array()) {&#10;  $END$&#10;}" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="hook" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSP" value="false" />
+      <option name="SQL" value="false" />
+      <option name="PHP" value="true" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CoffeeScript" value="false" />
+    </context>
+  </template>
+  <template name="htoken_list" value="/**&#10; * Implementation of hook_token_list().&#10; */&#10;function $MODULE$_token_list($type = 'all') {&#10;  $tokens = array();&#10;  &#10;  if ($type == '$TYPE$' || $type == 'all') {&#10;    $tokens['$TYPE$']['$TOKEN_NAME$'] = t(&quot;$DESCRIPTION$&quot;);&#10;  }&#10;  &#10;  return $tokens;&#10;}" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="MODULE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TOKEN_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DESCRIPTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSP" value="false" />
+      <option name="SQL" value="false" />
+      <option name="PHP" value="true" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CoffeeScript" value="false" />
+    </context>
+  </template>
+  <template name="htoken_values" value="/**&#10; * Implementation of hook_token_values().&#10; */&#10;function $MODULE$_token_values($type, $object = NULL, $options = array()) {&#10;  $tokens = array();&#10;  &#10;  if ($type == '$TYPE$') {&#10;    $tokens['$TOKEN_NAME$'] = $CODE$;&#10;  }&#10;  &#10;  return $tokens;&#10;}" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="MODULE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TOKEN_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CODE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSP" value="false" />
+      <option name="SQL" value="false" />
+      <option name="PHP" value="true" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CoffeeScript" value="false" />
+    </context>
+  </template>
+  <template name="htheme_registry_alter" value="/**&#10; * Implementation of hook_theme_registry_alter().&#10; */&#10;function $MODULE$_theme_registry_alter(&amp;$theme_registry) {&#10;  $END$&#10;}" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="MODULE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSP" value="false" />
+      <option name="SQL" value="false" />
+      <option name="PHP" value="true" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CoffeeScript" value="false" />
+    </context>
+  </template>
+  <template name="hmail" value="/**&#10; * Implementation of hook_mail().&#10; */&#10;function $MODULE$_mail($key, &amp;$message, $params) {&#10;  $END$&#10;}" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="MODULE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSP" value="false" />
+      <option name="SQL" value="false" />
+      <option name="PHP" value="true" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CoffeeScript" value="false" />
+    </context>
+  </template>
+  <template name="hfield_info" value="/**&#10; * Implementation of hook_field_info().&#10; */&#10;function $MODULE$_field_info() {&#10;  return array(&#10;    '$FIELD$' =&gt; array(&#10;      'label' =&gt; t('$TEXT$'),&#10;      'description' =&gt; t('$DESCRIPTION$'),&#10;    ),&#10;  );&#10;}" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="MODULE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="FIELD" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TEXT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DESCRIPTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSP" value="false" />
+      <option name="SQL" value="false" />
+      <option name="PHP" value="true" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CoffeeScript" value="false" />
+    </context>
+  </template>
+  <template name="huninstall" value="/**&#10; * Implementation of hook_uninstall().&#10; */&#10;function hook_uninstall() {&#10;  $END$&#10;}" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSP" value="false" />
+      <option name="SQL" value="false" />
+      <option name="PHP" value="true" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CoffeeScript" value="false" />
+    </context>
+  </template>
+  <template name="henable" value="/**&#10; * Implementation of hook_enable().&#10; */&#10;function $MODULE$_enable() {&#10;  $END$&#10;}" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="MODULE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSP" value="false" />
+      <option name="SQL" value="false" />
+      <option name="PHP" value="true" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CoffeeScript" value="false" />
+    </context>
+  </template>
+  <template name="hdisable" value="/**&#10; * Implementation of hook_disable().&#10; */&#10;function $MODULE$_disable() {&#10;  $END$&#10;}" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="MODULE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSP" value="false" />
+      <option name="SQL" value="false" />
+      <option name="PHP" value="true" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CoffeeScript" value="false" />
+    </context>
+  </template>
+  <template name="hfield_settings" value="/**&#10; * Implementation of hook_field_settings().&#10; */&#10;function $MODULE$_field_settings($op, $field) {&#10;  switch ($op) {&#10;    case 'form':&#10;      $END$;&#10;    case 'save':&#10;      //something here&#10;    default:&#10;      //and here&#10;  }&#10;}" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="MODULE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSP" value="false" />
+      <option name="SQL" value="false" />
+      <option name="PHP" value="true" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CoffeeScript" value="false" />
+    </context>
+  </template>
+  <template name="hcontent_is_empty" value="/**&#10; * Implementation of hook_content_is_empty().&#10; */&#10;function $MODULE$_content_is_empty($item, $field) {&#10;  if ($END$) {&#10;    return TRUE;&#10;  }&#10;  return FALSE;&#10;}" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="MODULE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSP" value="false" />
+      <option name="SQL" value="false" />
+      <option name="PHP" value="true" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CoffeeScript" value="false" />
+    </context>
+  </template>
+  <template name="hfield" value="/**&#10; * Implementation of hook_field().&#10; */&#10;function $MODULE$_field($op, &amp;$node, $field, &amp;$items, $teaser, $page) {&#10;  $END$&#10;}" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="MODULE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSP" value="false" />
+      <option name="SQL" value="false" />
+      <option name="PHP" value="true" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CoffeeScript" value="false" />
+    </context>
+  </template>
+</templateSet>
+
